@@ -1,4 +1,4 @@
-package com.ai.image;
+package com.ai.image.config;
 
 import com.google.genai.Client;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class GenAIConfiguration {
 
     @Bean
-    public Client genaiClient(@Value("${google.api.key}") String apiKey) {
+    public Client genaiClient(@Value("${gemini.api.key}") String apiKey) {
         return Client.builder()
                 .apiKey(apiKey)
                 .build();

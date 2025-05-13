@@ -1,5 +1,6 @@
-package com.ai.image;
+package com.ai.image.repository;
 
+import com.ai.image.entites.ImageEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

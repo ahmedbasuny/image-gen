@@ -17,6 +17,15 @@ spring:
       max-file-size: 20MB
       max-request-size: 20MB
 
-google:
+gemini:
   api:
-    key: ${GEMINI_API_KEY:AIzaSyB6uHtoC9DabwvD_eOIo3XJzCMSGyqHuZs}
+    key: ${GEMINI_API_KEY}
+  model:
+    image-generation: ${gemini.model.image-generation}
+  retry:
+    delay: ${gemini.retry.delay}
+
+rate:
+  limit:
+    requests: 10
+    duration: 1

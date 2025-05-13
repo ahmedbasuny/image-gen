@@ -1,4 +1,4 @@
-package com.ai.image;
+package com.ai.image.service;
 
 import java.util.UUID;
 

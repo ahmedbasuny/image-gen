@@ -1,8 +1,9 @@
-package com.ai.image;
+package com.ai.image.entites;
 
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.Instant;
 import java.util.UUID;
 
 @Getter
@@ -21,4 +22,8 @@ public class ImageEntity {
     private String description;
     private String metaData;
     private String url;
+    private Long size;
+    private Instant createdAt;
+    @Version
+    private Long version;
 }
